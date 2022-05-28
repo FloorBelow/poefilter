@@ -1,0 +1,508 @@
+﻿#===============================================================================
+# FILTER3.15
+#===============================================================================
+#
+# NAME:          Filter3.15
+# VERSION:       
+# AUTHOR:        
+# CONTACT:       
+# LINK:          
+#
+# Default strictness: 0
+#
+# Created with Filter Master editor at https://grinding.zone
+#
+#===============================================================================
+
+
+
+
+Show
+	Class = "Sentinel"
+	SetBorderColor 200 200 200 255 # Rare Border
+	PlayAlertSound 1 79
+	MinimapIcon 0 White Hexagon
+	PlayEffect Grey 
+
+Show
+	BaseType = "Fishing Rod" "Imperial Legacy" "The Lion" "Bone Helmet" "Blue Pearl Amulet" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Bone Helmet" "The Chains that Bind" "The Dapper Prodigy"
+	SetTextColor 74 230 58 255
+	SetBorderColor 0 0 0 0
+	PlayAlertSound 1 79
+	MinimapIcon 2 Green Diamond
+	PlayEffect Green 
+
+Show
+	Class = "Labyrinth Item" "Labyrinth Map Item" "Labyrinth Trinket" "Incursion Item" "Heist"
+	SetTextColor 74 230 58 255
+	SetBorderColor 0 0 0 0
+	PlayAlertSound 1 79
+	MinimapIcon 2 Green Diamond
+	PlayEffect Green 
+
+#===============================================================================
+# Section: Jewels
+#===============================================================================
+
+Show
+	BaseType = "Cluster Jewel"
+	SetTextColor 27 162 155 255
+	SetBorderColor 181 75 255 255 # Curio Border
+	MinimapIcon 2 Blue Square
+	PlayEffect Blue 
+
+Show
+	Rarity = Unique
+	Class = "Jewel"
+	SetTextColor 27 162 155 255
+	SetBorderColor 175 96 37 255 # Unique Border
+	MinimapIcon 2 Blue Square
+
+Show
+	Rarity = Rare
+	Class = "Jewel"
+	SetTextColor 27 162 155 255
+	SetBorderColor 255 255 119 255 # Rare Border
+	MinimapIcon 2 Blue Square
+
+Show
+	Rarity = Magic
+	Class = "Jewel"
+	SetTextColor 27 162 155 255
+	SetBorderColor 35 160 254 255 # Magic Border
+	MinimapIcon 2 Blue Square
+
+Show
+	Class = "Jewel"
+	SetTextColor 27 162 155 255
+	SetBorderColor 200 200 200 255 # Normal Border
+	MinimapIcon 2 Blue Square
+
+#===============================================================================
+# Section: Gems
+#===============================================================================
+
+Show
+	BaseType = "Enhance Support" "Enlighten Support" "Empower Support"
+	PlayAlertSound 1 100
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue 
+
+Show
+	GemLevel >= 20
+	Class = "Skill Gem"
+	PlayAlertSound 10 100
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue 
+
+Show
+	GemQualityType = Divergent
+	Class = "Skill Gem"
+	PlayAlertSound 1 100
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue 
+
+Show
+	GemQualityType = Anomalous
+	Class = "Skill Gem"
+	PlayAlertSound 1 100
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue 
+
+Show
+	GemQualityType = Phantasmal
+	Class = "Skill Gem"
+	PlayAlertSound 1 100
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue 
+
+Show
+	Class = "Skill Gem"
+	BaseType = "Vaal"
+
+Hide
+	AreaLevel >= 68
+	Quality = 0
+	Class = "Skill Gem"
+
+#===============================================================================
+# Section: Maps
+#===============================================================================
+
+Show
+	Class = "Map Fragments" "Metamorph Sample"
+	SetTextColor 175 96 37 255 # Unique Text
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+	SetBorderColor 170 158 130 255 # Currency Border
+	MinimapIcon 2 Brown Cross
+	PlayEffect Brown 
+
+Show
+	Rarity = Unique
+	Class = "Maps" "Leaguestone" "Contract" "Blueprint" "Expedition Logbook"
+	SetTextColor 175 96 37 255 # Unique Text
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+	SetBorderColor 170 158 130 255 # Currency Border
+	MinimapIcon 2 Brown Cross
+	PlayEffect Brown 
+
+Show
+	Rarity = Rare
+	Class = "Maps" "Leaguestone" "Contract" "Blueprint" "Expedition Logbook"
+	SetTextColor 255 255 119 255 # Rare Text
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+	SetBorderColor 170 158 130 255 # Currency Border
+	MinimapIcon 2 Brown Cross
+	PlayEffect Brown 
+
+Show
+	Rarity = Magic
+	Class = "Maps" "Leaguestone" "Contract" "Blueprint" "Expedition Logbook"
+	SetTextColor 136 136 255 255 # Magic Text
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+	SetBorderColor 170 158 130 255 # Currency Border
+	MinimapIcon 2 Brown Cross
+	PlayEffect Brown 
+
+Show
+	Class = "Maps" "Leaguestone" "Contract" "Blueprint" "Expedition Logbook"
+	SetTextColor 170 158 130 255 # Currency Text
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+	SetBorderColor 170 158 130 255 # Currency Border
+	MinimapIcon 2 Brown Cross
+	PlayEffect Brown 
+
+#===============================================================================
+# Section: Currency
+#===============================================================================
+
+Hide
+	BaseType = "The Carrion Crow"
+
+Show
+	BaseType = "Orb of Scouring" "Orb of Regret" "Vaal Orb" "Eternal Orb" "Mirror of Kalandra" "Orb of Annulment" "Annulment Shard" "Mirror Shard" "Tainted"
+	SetTextColor 170 158 130 255 # Currency Text
+	SetBorderColor 175 96 37 255 # Unique Border
+	MinimapIcon 0 Brown Kite
+	PlayEffect Brown 
+
+Show
+	BaseType = "Orb of Alchemy" "Chaos Orb" "Regal Orb" "Exalted Orb" "Blessed Orb" "Divine Orb" "Perandus Coin" "Chaos Shard" "Alchemy Shard" "Exalted Shard" "Regal Shard" "Orb of Binding" "Primitive Chaotic Resonator" "Potent Chaotic Resonator" "Powerful Chaotic Resonator" "Prime Chaotic Resonator" "Astragali" "Exotic Coinage" "Scrap Metal" "Burial Medallion" "Rogue's Marker"
+	SetTextColor 170 158 130 255 # Currency Text
+	SetBorderColor 255 255 119 255 # Rare Border
+	MinimapIcon 0 Yellow Kite
+	PlayEffect Yellow 
+
+Show
+	BaseType = "Glassblower's Bauble" "Cartographer's Chisel" "Instilling Orb" "Enkindling Orb" "Sextant"
+	SetTextColor 170 158 130 255 # Currency Text
+	SetBorderColor 170 158 130 255 # Currency Border
+	MinimapIcon 0 Grey Kite
+	PlayEffect Grey 
+
+Show
+	BaseType = "Gemcutter's Prism" "Jeweller's Orb" "Chromatic Orb" "Orb of Fusing"
+	SetTextColor 170 158 130 255 # Currency Text
+	SetBorderColor 27 162 155 255 # Gem Border
+	MinimapIcon 0 Cyan Kite
+	PlayEffect Cyan 
+
+Show
+	Class = "Currency"
+	BaseType = "Essence" "Remnant of Corruption"
+	SetTextColor 170 158 130 255 # Currency Text
+	SetBorderColor 35 160 254 255 # Magic Border
+	MinimapIcon 0 Blue Kite
+	PlayEffect Blue 
+
+Show
+	BaseType = "Orb of Transmutation" "Orb of Augmentation" "Orb of Alteration" "Orb of Chance" "Alteration Shard" "Transmutation Shard"
+	SetTextColor 170 158 130 255 # Currency Text
+	SetBorderColor 136 136 255 255
+
+Show
+	BaseType = "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone"
+	SetTextColor 170 158 130 255 # Currency Text
+	SetBorderColor 170 158 130 255 # Currency Border
+
+Show
+	Class = "Currency" "Divination Card" "Incubator"
+	SetTextColor 170 158 130 255 # Currency Text
+	SetBorderColor 181 75 255 255 # Curio Border
+	MinimapIcon 0 Purple Kite
+	PlayEffect Purple 
+
+#Show
+#	Class = "Harvest"
+#	BaseType = "Wild"
+#	SetTextColor 182 81 202 255
+#	SetBorderColor 182 81 202 255
+
+#Show
+#	Class = "Harvest"
+#	BaseType = "Vivid"
+#	SetTextColor 201 195 84 255
+#	SetBorderColor 201 195 84 255
+
+#Show
+#	Class = "Harvest"
+#	BaseType = "Primal"
+#	SetTextColor 78 192 206 255
+#	SetBorderColor 78 192 206 255
+
+#===============================================================================
+# Section: Flasks
+#===============================================================================
+
+Show
+	Rarity = Unique
+	Class = "Flask"
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+	SetBorderColor 200 200 200 255 # Normal Border
+
+Show
+	Quality = 20
+	Class = "Flask"
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+	SetBorderColor 200 200 200 255 # Normal Border
+
+Show
+	Class = "Utility Flask" "Critical Utility Flasks"
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+
+Show
+	Rarity = Normal
+	BaseType = "Divine Life Flask" "Divine Mana Flask" "Eternal Life Flask" "Eternal Mana Flask" "Hallowed Hybrid Flask"
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+
+Hide
+	AreaLevel >= 68
+	Class = "Flask"
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+
+#===============================================================================
+# Section: Equipment
+#===============================================================================
+
+Hide
+	ItemLevel > 28
+	BaseDefencePercentile > 0
+	SetFontSize 30
+	Continue
+
+#===============================================================================
+# Section: Weapons
+#===============================================================================
+#Melee Daggers and non-war staves are kinda useless in the current meta, so we'll ignore them. also im possibly being too generous with the base types particularly on one handers
+
+
+Hide
+	Class = Hand Staff Sceptre Bow Dagger Wand
+	SetBackgroundColor 0 0 0 0
+	SetFontSize 25
+	Continue
+
+
+Hide
+	BaseType = "Sambar Sceptre" "Opal Sceptre" "Void Sceptre" "Profane Wand" "Pagan Wand" "Heathen Wand" "Opal Wand" "Prophecy Wand" "Tornado Wand" "Imbued Wand" "Demon's Horn" "Platinum Kris" "Golden Kris" "Copper Kris" "Demon Dagger" "Fiend Dagger" "Imp Dagger"
+	SetBackgroundColor 10 27 63 220 # Int Base
+	SetFontSize 30
+	Continue
+
+Hide
+	BaseType = "Coronal Maul" "Terror Maul" "Imperial Maul" "Meatgrinder" "Piledriver" "Colossus Mallet" "Karui Maul" "Fleshripper" "Void Axe" "Despot Axe" "Vaal Axe" "Ezomyte Axe" "Sundering Axe" "Karui Chopper" "Exquisite Blade" "Infernal Sword" "Lion Sword" "Vaal Greatsword" "Ezomyte Blade" "Reaver Sword" "Judgement Staff" "Maelström Staff" "Ezomyte Staff"
+	SetBackgroundColor 65 15 13 220 # Str Base
+	SetFontSize 30
+	Continue
+
+Hide
+	BaseType = "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernach" "Legion Hammer" "Gavel" "Runic Hatchet" "Infernal Axe" "Royal Axe" "Vaal Hatchet" "Butcher Axe" "Reaver Axe" "Siege Axe" "Tiger Hook" "Midnight Blade" "Eternal Sword" "Vaal Blade" "Legion Sword" "Gladius" "Corsair Sword" "Dragoon Sword" "Harpy Rapier" "Jewelled Foil" "Spiraled Foil" "Pecoraro" "Tempered Foil" "Dragonbone Rapier"
+	SetBackgroundColor 63 43 0 220 # Str/Dex Base
+	SetFontSize 30
+	Continue
+
+Hide
+	BaseType = "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Spine Bow" "Assassin Bow" "Ranger Bow" "Citadel Bow" "Thicket Bow"
+	SetBackgroundColor 10 42 5 220 # Dex Base
+	SetFontSize 30
+	Continue
+	
+Hide
+	Class = "Quiver"
+	SetBackgroundColor 10 42 5 220 # Dex Base
+	SetFontSize 30
+	Continue
+
+Hide
+	BaseType = "Fire Arrow Quiver" "Serrated Arrow Quiver"
+	SetBackgroundColor 0 0 0 0
+	SetFontSize 25
+	Continue
+	
+Hide
+	BaseType = "Gemini Claw" "Terror Claw" "Imperial Claw" "Vaal Claw" "Eye Gouger" "Hellion's Paw" "Throat Stabber"
+	SetBackgroundColor 6 47 46 220 # Int/Dex Base
+	SetFontSize 30
+	Continue
+
+
+#===============================================================================
+# Section: Armour
+#===============================================================================
+
+Show
+	Class = "Body Armour" Boots Helmet Gloves Shield
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+	SetBorderColor 100 100 100 255 # Armour Border
+	Continue
+
+Hide
+	BaseArmour > 0
+	BaseEvasion = 0
+	BaseEnergyShield = 0
+	SetBackgroundColor 65 15 13 220 # Str Base
+	Continue
+
+Hide
+	BaseArmour > 0
+	BaseEvasion > 0
+	BaseEnergyShield = 0
+	SetBackgroundColor 63 43 0 220 # Str/Dex Base
+	Continue
+	
+Hide
+	BaseArmour = 0
+	BaseEvasion > 0
+	BaseEnergyShield = 0
+	SetBackgroundColor 10 42 5 220 # Dex Base
+	Continue
+
+Hide
+	BaseArmour = 0
+	BaseEvasion > 0
+	BaseEnergyShield > 0
+	SetBackgroundColor 6 47 46 220 # Int/Dex Base
+	Continue
+
+Hide
+	BaseArmour = 0
+	BaseEvasion = 0
+	BaseEnergyShield > 0
+	SetBackgroundColor 10 27 63 220 # Int Base
+	Continue
+
+Hide
+	BaseArmour > 0
+	BaseEvasion = 0
+	BaseEnergyShield > 0
+	SetBackgroundColor 46 15 53 220 # Str/Int Base
+	Continue
+	
+Show
+	BaseType = "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Apothecary's Gloves" "Fugitive Boots" 
+	Continue
+
+	
+Hide
+	ItemLevel >= 68
+	DropLevel < 59
+	Class = "Body Armour"
+	SetBackgroundColor 0 0 0 200
+	SetFontSize 25
+	Continue
+
+Hide
+	ItemLevel >= 68
+	DropLevel < 58
+	Class = Shield	
+	SetBackgroundColor 0 0 0 200
+	SetFontSize 25
+	Continue
+	
+Hide
+	ItemLevel >= 68
+	DropLevel <= 48
+	Class = Boots Helmet Gloves
+	SetBackgroundColor 0 0 0 200
+	SetFontSize 25
+	Continue
+
+#===============================================================================
+# Section: Equipment Text
+#===============================================================================
+
+Show
+	HasInfluence = "Shaper" "Elder" "Crusader" "Redeemer" "Hunter" "Warlord"
+	SetTextColor 181 75 255 255 # Curio Text
+	SetFontSize 32
+	Continue
+
+Show
+	SynthesisedItem = True
+	SetTextColor 181 75 255 255 # Curio Text
+	SetFontSize 32
+	Continue
+
+Show
+	FracturedItem = True
+	SetTextColor 181 75 255 255 # Curio Text
+	SetFontSize 32
+	Continue
+
+#===============================================================================
+# Section: Show Rules
+#===============================================================================
+
+Show
+	BaseType = "Convoking Wand" "Bone Helmet" "Seaglass Amulet" "Marble Amulet" "Artillery Quiver" "Blue Pearl Amulet" "Vanguard Belt" "Iolite Ring" "Crystal Belt" "Vermillion Ring" "Steel Ring" "Opal Ring" "Cerulean Ring"
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+	SetBorderColor 200 200 200 255 # Normal Border
+	SetFontSize 32
+
+Show
+	LinkedSockets >= 5
+	SetBorderColor 27 162 155 255 # Gem Border
+	SetFontSize 32
+	PlayAlertSound 1 79
+	MinimapIcon 0 Blue Triangle
+	PlayEffect Blue
+
+Show
+	Sockets = "6"
+	SetBorderColor 27 162 155 255 # Gem Border
+	SetFontSize 32
+	PlayAlertSound 1 79
+	MinimapIcon 0 Blue Triangle
+	PlayEffect Blue
+
+Show
+	ItemLevel < 60
+	LinkedSockets >= 4
+	SetBorderColor 27 162 155 255 # Gem Border
+	
+Hide
+	ItemLevel < 60
+	SocketGroup >= "RGB"
+	SetBorderColor 27 162 155 255 # Gem Border
+	Continue
+
+Show
+	Rarity > Magic
+
+Show
+	Identified = True
+
+Show
+	Rarity = Normal
+	BaseType = "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Two-Stone Ring" "Prismatic Ring" "Amethyst Ring" "Amber Amulet" "Lapis Amulet" "Jade Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Simplex Amulet" "Astrolabe Amulet" "Stygian Vise" "Micro-Distillery Belt" "Mechalarm Belt" "Talisman"
+
+Show
+	ItemLevel < 68
+	Rarity = Normal
+	Class = "Ring" "Amulet" "Belt"
+
+Show
+	ItemLevel < 28
+	
+Show
+	BaseType = "Vaal Axe" "Piledriver"
