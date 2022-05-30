@@ -298,6 +298,7 @@ Hide
 
 Hide
 	Class = Hand Staff Sceptre Bow Dagger Wand
+	Rarity < Unique
 	SetBackgroundColor 0 0 0 0
 	SetFontSize 25
 	Continue
@@ -406,6 +407,7 @@ Show
 Hide
 	ItemLevel >= 68
 	DropLevel < 59
+		Rarity < Unique
 	Class = "Body Armour"
 	SetBackgroundColor 0 0 0 200
 	SetFontSize 25
@@ -414,7 +416,8 @@ Hide
 Hide
 	ItemLevel >= 68
 	DropLevel < 58
-	Class = Shield	
+	Class = Shield
+	Rarity < Unique
 	SetBackgroundColor 0 0 0 200
 	SetFontSize 25
 	Continue
@@ -422,6 +425,7 @@ Hide
 Hide
 	ItemLevel >= 68
 	DropLevel <= 48
+	Rarity < Unique
 	Class = Boots Helmet Gloves
 	SetBackgroundColor 0 0 0 200
 	SetFontSize 25
