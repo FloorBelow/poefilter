@@ -308,6 +308,8 @@ Hide
 Hide
 	Class = Hand Staff Sceptre Bow Dagger Wand Claw
 	Rarity < Unique
+	Sockets < 6
+	LinkedSockets < 5
 	SetBackgroundColor 0 0 0 0
 	SetFontSize 25
 	Continue
@@ -325,11 +327,11 @@ Hide
 	SetFontSize 30
 	Continue
 
-Hide
-	BaseType = "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernach" "Legion Hammer" "Gavel" "Runic Hatchet" "Infernal Axe" "Royal Axe" "Vaal Hatchet" "Butcher Axe" "Reaver Axe" "Siege Axe" "Tiger Hook" "Midnight Blade" "Eternal Sword" "Vaal Blade" "Legion Sword" "Gladius" "Corsair Sword" "Dragoon Sword" "Harpy Rapier" "Jewelled Foil" "Spiraled Foil" "Pecoraro" "Tempered Foil" "Dragonbone Rapier"
-	SetBackgroundColor 63 43 0 220 # Str/Dex Base
-	SetFontSize 30
-	Continue
+#Hide
+#	BaseType = "Behemoth Mace" "Nightmare Mace" "Auric Mace" "Pernach" "Legion Hammer" "Gavel" "Runic Hatchet" "Infernal Axe" "Royal Axe" "Vaal Hatchet" "Butcher Axe" "Reaver Axe" "Siege Axe" "Tiger Hook" "Midnight Blade" "Eternal Sword" "Vaal Blade" "Legion Sword" "Gladius" "Corsair Sword" "Dragoon Sword" "Harpy Rapier" "Jewelled Foil" "Spiraled Foil" "Pecoraro" "Tempered Foil" "Dragonbone Rapier"
+#	SetBackgroundColor 63 43 0 220 # Str/Dex Base
+#	SetFontSize 30
+#	Continue
 
 Hide
 	BaseType = "Maraketh Bow" "Harbinger Bow" "Imperial Bow" "Spine Bow" "Assassin Bow" "Ranger Bow" "Citadel Bow" "Thicket Bow"
@@ -422,7 +424,9 @@ Show
 Hide
 	ItemLevel >= 68
 	DropLevel < 59
-		Rarity < Unique
+	Rarity < Unique
+	Sockets < 6
+	LinkedSockets < 5
 	Class = "Body Armour"
 	SetBackgroundColor 0 0 0 200
 	SetFontSize 25
@@ -433,6 +437,8 @@ Hide
 	DropLevel < 58
 	Class = Shield
 	Rarity < Unique
+	Sockets < 6
+	LinkedSockets < 5
 	SetBackgroundColor 0 0 0 200
 	SetFontSize 25
 	Continue
@@ -441,6 +447,8 @@ Hide
 	ItemLevel >= 68
 	DropLevel <= 48
 	Rarity < Unique
+	Sockets < 6
+	LinkedSockets < 5
 	Class = Boots Helmet Gloves
 	SetBackgroundColor 0 0 0 200
 	SetFontSize 25
