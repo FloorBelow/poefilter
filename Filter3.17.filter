@@ -25,7 +25,16 @@ Show
 	PlayEffect Grey 
 
 Show
-	BaseType = "Fishing Rod" "Imperial Legacy" "The Lion" "Bone Helmet" "Blue Pearl Amulet" "Cerulean Ring" "Vermillion Ring" "Steel Ring" "Bone Helmet" "The Chains that Bind" "The Dapper Prodigy"
+	BaseType = "Fishing Rod" "Imperial Legacy" "The Lion" "Vermillion Ring" "The Chains that Bind" "The Dapper Prodigy"
+	SetTextColor 74 230 58 255
+	SetBorderColor 0 0 0 0
+	PlayAlertSound 1 79
+	MinimapIcon 2 Green Diamond
+	PlayEffect Green 
+
+Show
+	BaseType = "Piledriver"
+	ItemLevel >= 83
 	SetTextColor 74 230 58 255
 	SetBorderColor 0 0 0 0
 	PlayAlertSound 1 79
@@ -297,7 +306,7 @@ Hide
 
 
 Hide
-	Class = Hand Staff Sceptre Bow Dagger Wand
+	Class = Hand Staff Sceptre Bow Dagger Wand Claw
 	Rarity < Unique
 	SetBackgroundColor 0 0 0 0
 	SetFontSize 25
@@ -397,6 +406,12 @@ Hide
 	BaseEvasion = 0
 	BaseEnergyShield > 0
 	SetBackgroundColor 46 15 53 220 # Str/Int Base
+	Continue
+	
+Hide
+	BaseWard > 0
+	SetBackgroundColor 32 32 32 220 # Unaligned Base
+	SetBorderColor 200 200 200 255 # Normal Border
 	Continue
 	
 Show
@@ -509,4 +524,4 @@ Show
 	ItemLevel < 28
 	
 Show
-	BaseType = "Vaal Axe" "Piledriver"
+	BaseType = "Vaal Axe" "Piledriver" "Dragonscale Boots" "Dragonscale Gauntlets"
